@@ -5,6 +5,7 @@
 # Step 1:
 # Build image and add a descriptive tag
 docker build --tag=predict .
+docker tag predict:latest georgemusala/predictapp:latest
 
 # Step 2: 
 # List docker images
