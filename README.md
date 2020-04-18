@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![BuildStatus](https://circleci.com/gh/georgemusala/clouddevops-project-4.svg?style=svg)](https://app.circleci.com/pipelines/github/georgemusala/clouddevops-project-4)
 
 ## Project Overview
 
