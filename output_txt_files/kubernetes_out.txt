@@ -1,2 +1,16 @@
+NAME      READY   STATUS    RESTARTS   AGE
+predict   1/1     Running   0          6m47s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
 
-<paste log output from Kubernetes-mediated prediction, here>
+[2020-04-18 13:00:52,120] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-04-18 13:00:52,123] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-04-18 13:00:52,133] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-04-18 13:00:52,144] INFO in app: Output prediction : [20.35373177134412]
+127.0.0.1 - - [18/Apr/2020 13:00:52] "POST /predict HTTP/1.1" 200 -
